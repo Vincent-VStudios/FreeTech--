@@ -239,10 +239,32 @@ function openArticle(id) {
             <div class="border-t mt-8 pt-6">
                 <h3 class="text-lg font-semibold mb-4">💬 评论</h3>
                 <div id="giscus-container"></div>
-                <p class="text-sm text-gray-500 mt-2">评论功能配置中，请稍后...</p>
             </div>
         </div>
     `;
+    
+    // 延迟加载 Giscus，确保容器已渲染
+    setTimeout(() => {
+        const container = document.getElementById('giscus-container');
+        if (!container) return;
+        
+        const script = document.createElement('script');
+        script.src = 'https://giscus.app/client.js';
+        script.setAttribute('data-repo', 'Vincent-VStudios/FreeTech--');
+        script.setAttribute('data-repo-id', 'R_kgDOSNAyBw');
+        script.setAttribute('data-category', 'General');
+        script.setAttribute('data-category-id', 'DIC_kwDOSNAyB84CZ8Qe');
+        script.setAttribute('data-mapping', 'pathname');
+        script.setAttribute('data-strict', '0');
+        script.setAttribute('data-reactions-enabled', '1');
+        script.setAttribute('data-emit-metadata', '0');
+        script.setAttribute('data-input-position', 'bottom');
+        script.setAttribute('data-theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+        script.setAttribute('data-lang', 'zh-CN');
+        script.setAttribute('crossorigin', 'anonymous');
+        script.async = true;
+        container.appendChild(script);
+    }, 100);
     
     modal.classList.remove('hidden');
     modal.onclick = (e) => {
