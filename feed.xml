@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>FreeTech 灵感库</title>
+    <link>https://vincent-vstudios.github.io/FreeTech--/</link>
+    <description>技术博客与创意分享 - 探索 AI、自动化与开发工具</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 26 Apr 2026 13:22:00 GMT</lastBuildDate>
+    <atom:link href="https://vincent-vstudios.github.io/FreeTech--/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>五分钟搭建 AI 工作流：n8n + DeepSeek 实战</title>
+      <link>https://vincent-vstudios.github.io/FreeTech--/#article-1</link>
+      <guid isPermaLink="true">https://vincent-vstudios.github.io/FreeTech--/#article-1</guid>
+      <pubDate>Sun, 20 Apr 2026 00:00:00 GMT</pubDate>
+      <category>AI</category>
+      <category>自动化</category>
+      <category>效率工具</category>
+      <description><![CDATA[本文介绍如何利用 n8n 自动化平台结合 DeepSeek API，构建一个能够自动抓取内容、AI 整理归档的智能工作流。无需编写代码，即可实现复杂的内容处理流程。]]></description>
+    </item>
+    
+    <item>
+      <title>macOS 上搭建本地 AI 开发环境：M1/M2/M3 芯片优化指南</title>
+      <link>https://vincent-vstudios.github.io/FreeTech--/#article-2</link>
+      <guid isPermaLink="true">https://vincent-vstudios.github.io/FreeTech--/#article-2</guid>
+      <pubDate>Fri, 18 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Mac</category>
+      <category>AI</category>
+      <category>本地部署</category>
+      <category>苹果芯片</category>
+      <description><![CDATA[在 Apple Silicon 芯片的 Mac 上运行本地大模型已成为现实。本文详细讲解如何在 Mac 上配置 CUDA 替代方案、内存优化、以及适合 M 系列芯片的模型选择。]]></description>
+    </item>
+    
+    <item>
+      <title>GitHub Actions 自动化部署实战</title>
+      <link>https://vincent-vstudios.github.io/FreeTech--/#article-3</link>
+      <guid isPermaLink="true">https://vincent-vstudios.github.io/FreeTech--/#article-3</guid>
+      <pubDate>Wed, 16 Apr 2026 00:00:00 GMT</pubDate>
+      <category>DevOps</category>
+      <category>GitHub</category>
+      <category>CI/CD</category>
+      <description><![CDATA[从零开始配置 GitHub Actions 工作流，实现代码提交后自动测试、构建和部署。包含多环境配置、 secrets 管理和最佳实践。]]></description>
+    </item>
+    
+    <item>
+      <title>Notion API 二次开发：打造个人知识管理系统</title>
+      <link>https://vincent-vstudios.github.io/FreeTech--/#article-4</link>
+      <guid isPermaLink="true">https://vincent-vstudios.github.io/FreeTech--/#article-4</guid>
+      <pubDate>Mon, 14 Apr 2026 00:00:00 GMT</pubDate>
+      <category>Notion</category>
+      <category>API</category>
+      <category>知识管理</category>
+      <description><![CDATA[深入 Notion API 的使用方法，构建自动化的知识收集和整理系统。包含数据库操作、页面创建、Webhook 集成等高级技巧。]]></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,6 +6,8 @@
     <title>FreeTech 灵感库 | 技术博客与创意分享</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="alternate" type="application/rss+xml" title="FreeTech 灵感库 RSS" href="feed.xml">
 </head>
 <body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 min-h-screen">
     <!-- 导航栏 -->
@@ -45,6 +47,14 @@
         </div>
     </div>
 
+    <!-- Umami 统计 -->
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="freetech-blog"></script>
     <script src="app.js"></script>
+    <script>
+        // 注册 Service Worker
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
 </body>
 </html>

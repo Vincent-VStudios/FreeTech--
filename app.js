@@ -234,6 +234,13 @@ function openArticle(id) {
             <div class="article-content border-t pt-6">
                 ${article.content}
             </div>
+            
+            <!-- Giscus 评论 -->
+            <div class="border-t mt-8 pt-6">
+                <h3 class="text-lg font-semibold mb-4">💬 评论</h3>
+                <div id="giscus-container"></div>
+                <p class="text-sm text-gray-500 mt-2">评论功能配置中，请稍后...</p>
+            </div>
         </div>
     `;
     
