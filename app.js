@@ -85,9 +85,9 @@ ollama run llama3:8b</pre>`,
     {
         id: 5,
         title: "DeepSeek-V4 正式发布：免费开源 + 百万上下文，Agent能力逼近顶级模型！",
-        summary: "时隔半年，DeepSeek 新一代模型 DeepSeek-V4 正式发布。这一次，它不仅在性能上大幅跃升，还直接把"开源大模型"的上限再次拉高。百万级上下文窗口，SWE-bench 测试达到 80.6%，性能已经接近顶级闭源模型。",
+        summary: "时隔半年，DeepSeek 新一代模型 DeepSeek-V4 正式发布。这一次，它不仅在性能上大幅跃升，还直接把「开源大模型」的上限再次拉高。百万级上下文窗口，SWE-bench 测试达到 80.6%，性能已经接近顶级闭源模型。",
         content: `<h2>终于来了！</h2>
-        <p>时隔半年，DeepSeek 新一代模型 <strong>DeepSeek-V4</strong> 正式发布。这一次，它不仅在性能上大幅跃升，还直接把"开源大模型"的上限再次拉高。结合官方发布与实测，这篇文章带你系统看懂：<strong>DeepSeek-V4 到底强在哪？值不值得用？</strong></p>
+        <p>时隔半年，DeepSeek 新一代模型 <strong>DeepSeek-V4</strong> 正式发布。这一次，它不仅在性能上大幅跃升，还直接把「开源大模型」的上限再次拉高。结合官方发布与实测，这篇文章带你系统看懂：<strong>DeepSeek-V4 到底强在哪？值不值得用？</strong></p>
         
         <h2>一、DeepSeek-V4 核心亮点</h2>
         
