@@ -253,7 +253,7 @@ function openArticle(id) {
         script.setAttribute('data-repo', 'Vincent-VStudios/FreeTech--');
         script.setAttribute('data-repo-id', 'R_kgDOSNAyBw');
         script.setAttribute('data-category', 'General');
-        script.setAttribute('data-category-id', 'DIC_kwDOSNAyB84CZ8Qe');
+        script.setAttribute('data-category-id', 'DIC_kwDOSNAyB84C7uze');
         script.setAttribute('data-mapping', 'pathname');
         script.setAttribute('data-strict', '0');
         script.setAttribute('data-reactions-enabled', '1');
