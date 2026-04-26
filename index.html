@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeTech 灵感库 | 技术博客与创意分享</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 min-h-screen">
+    <!-- 导航栏 -->
+    <nav class="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+            <h1 class="text-xl font-bold text-indigo-600 dark:text-indigo-400 cursor-pointer" onclick="renderHome()">FreeTech 灵感库</h1>
+            <div class="flex items-center gap-4">
+                <button id="themeToggle" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition" title="切换主题">
+                    🌙
+                </button>
+                <button onclick="renderArchive()" class="text-sm hover:text-indigo-600 dark:hover:text-indigo-400">归档</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 搜索栏 -->
+    <div class="max-w-4xl mx-auto px-4 py-6">
+        <input type="text" id="searchInput" placeholder="搜索文章..." 
+            class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            oninput="handleSearch(this.value)">
+    </div>
+
+    <!-- 标签筛选 -->
+    <div id="tagFilter" class="max-w-4xl mx-auto px-4 pb-6 flex flex-wrap gap-2">
+        <!-- 动态生成 -->
+    </div>
+
+    <!-- 文章列表 -->
+    <main id="mainContent" class="max-w-4xl mx-auto px-4 pb-12">
+        <!-- 动态渲染 -->
+    </main>
+
+    <!-- 文章详情弹窗 -->
+    <div id="articleModal" class="fixed inset-0 bg-black/50 hidden z-50 overflow-y-auto">
+        <div class="max-w-3xl mx-auto my-8 bg-white dark:bg-gray-800 rounded-2xl shadow-2xl">
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

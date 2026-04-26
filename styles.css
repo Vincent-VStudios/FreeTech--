@@ -1,0 +1,112 @@
+/* FreeTech 灵感库 - 样式表 */
+
+/* 暗色模式 */
+.dark {
+    --bg-primary: #111827;
+    --bg-secondary: #1f2937;
+    --text-primary: #f9fafb;
+    --text-secondary: #d1d5db;
+    --border-color: #374151;
+}
+
+body:not(.dark) {
+    --bg-primary: #f9fafb;
+    --bg-secondary: #ffffff;
+    --text-primary: #111827;
+    --text-secondary: #6b7280;
+    --border-color: #e5e7eb;
+}
+
+/* 文章卡片悬停效果 */
+.article-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.article-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.15);
+}
+
+/* 标签样式 */
+.tag {
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 12px;
+    background: #e0e7ff;
+    color: #4338ca;
+    transition: all 0.2s;
+}
+.dark .tag {
+    background: #312e81;
+    color: #a5b4fc;
+}
+.tag:hover {
+    background: #c7d2fe;
+}
+.dark .tag:hover {
+    background: #3730a3;
+}
+
+/* 模态框动画 */
+#articleModal {
+    animation: fadeIn 0.2s ease-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* 暗色模式按钮样式 */
+.dark .bg-white { background-color: #1f2937 !important; }
+.dark .bg-gray-50 { background-color: #111827 !important; }
+.dark .bg-gray-100 { background-color: #374151 !important; }
+
+/* 搜索框聚焦效果 */
+#searchInput:focus {
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+/* 文章内容样式 */
+.article-content h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1.5rem 0 1rem;
+    color: var(--text-primary);
+}
+.article-content p {
+    line-height: 1.8;
+    margin: 0.75rem 0;
+    color: var(--text-secondary);
+}
+.article-content ul, .article-content ol {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+.article-content li {
+    margin: 0.5rem 0;
+    color: var(--text-secondary);
+}
+.article-content code {
+    background: #f3f4f6;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+.dark .article-content code {
+    background: #374151;
+}
+.article-content pre {
+    background: #1f2937;
+    color: #e5e7eb;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+.article-content a {
+    color: #6366f1;
+    text-decoration: underline;
+}
+.article-content a:hover {
+    color: #4f46e5;
+}
