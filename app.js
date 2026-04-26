@@ -81,6 +81,173 @@ ollama run llama3:8b</pre>`,
         tags: ["Notion", "效率工具", "API"],
         date: "2026-04-12",
         readingTime: "7 分钟"
+    },
+    {
+        id: 5,
+        title: "DeepSeek-V4 正式发布：免费开源 + 百万上下文，Agent能力逼近顶级模型！",
+        summary: "时隔半年，DeepSeek 新一代模型 DeepSeek-V4 正式发布。这一次，它不仅在性能上大幅跃升，还直接把"开源大模型"的上限再次拉高。百万级上下文窗口，SWE-bench 测试达到 80.6%，性能已经接近顶级闭源模型。",
+        content: `<h2>终于来了！</h2>
+        <p>时隔半年，DeepSeek 新一代模型 <strong>DeepSeek-V4</strong> 正式发布。这一次，它不仅在性能上大幅跃升，还直接把"开源大模型"的上限再次拉高。结合官方发布与实测，这篇文章带你系统看懂：<strong>DeepSeek-V4 到底强在哪？值不值得用？</strong></p>
+        
+        <h2>一、DeepSeek-V4 核心亮点</h2>
+        
+        <h3>1. 免费 + 开源 + 可商用</h3>
+        <p>DeepSeek-V4 延续了 DeepSeek 一贯的策略：<strong>完全开源（含权重）+ 支持商业使用</strong></p>
+        <p>这意味着：</p>
+        <ul>
+            <li>企业可以直接落地应用</li>
+            <li>开发者可以自由二次开发</li>
+            <li>不再被 API 成本卡死</li>
+        </ul>
+        
+        <h3>2. 四大模型版本（按需选择）</h3>
+        <p>本次一共发布了 4 个模型：</p>
+        <table>
+            <thead>
+                <tr><th>模型</th><th>参数规模</th><th>激活参数</th><th>类型</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>DeepSeek-V4-Flash-Base</td><td>284B</td><td>13B</td><td>基础模型</td></tr>
+                <tr><td>DeepSeek-V4-Flash</td><td>284B</td><td>13B</td><td>聊天模型</td></tr>
+                <tr><td>DeepSeek-V4-Pro-Base</td><td>1.6T</td><td>49B</td><td>基础模型</td></tr>
+                <tr><td>DeepSeek-V4-Pro</td><td>1.6T</td><td>49B</td><td>聊天模型</td></tr>
+            </tbody>
+        </table>
+        <p>简单理解：</p>
+        <ul>
+            <li><strong>Base</strong>：适合训练 / 微调 / 研究</li>
+            <li><strong>Flash</strong>：轻量、响应快</li>
+            <li><strong>Pro</strong>：最强性能版本</li>
+        </ul>
+        
+        <h3>3. 百万 Token 上下文（真正的质变）</h3>
+        <p>DeepSeek-V4 支持 <strong>百万级上下文窗口</strong>。</p>
+        <p>这是什么概念？一次性可以处理：</p>
+        <ul>
+            <li>《三体》三部曲（约 90 万字）</li>
+            <li>再加一整套《哈利·波特》</li>
+        </ul>
+        <p>这已经不是"长文本"，而是直接进入 <strong>"超长记忆模型"时代</strong>。</p>
+        
+        <h3>4. Agent 能力大幅提升</h3>
+        <p>在 SWE-bench 测试中：</p>
+        <p><strong>DeepSeek-V4-Pro 达到 80.6%</strong></p>
+        <p>这意味着：</p>
+        <ul>
+            <li>能处理复杂工程任务</li>
+            <li>支持多步推理</li>
+            <li>能像"工程师"一样思考</li>
+        </ul>
+        <p>性能已经接近顶级闭源模型。</p>
+        
+        <h2>二、实测环节：DeepSeek-V4 到底有多强？</h2>
+        
+        <h3>测试1：大海捞针（长文本检索）</h3>
+        <p><strong>测试方式</strong></p>
+        <p>在《三体》90万字文本中插入一句隐藏密码：</p>
+        <pre>DS-V4-PASSWORD-2026-ROCKS</pre>
+        <p><strong>提问：</strong></p>
+        <p><em>请告诉我文档中隐藏的测试密码是什么？</em></p>
+        <p><strong>结果</strong></p>
+        <p>模型<strong>精准命中</strong>：</p>
+        <pre>DS-V4-PASSWORD-2026-ROCKS</pre>
+        <p><strong>结论</strong></p>
+        <ul>
+            <li>百万上下文不是噱头</li>
+            <li>长文定位能力极强</li>
+            <li>明显优于很多"小模型拼接方案"</li>
+        </ul>
+        
+        <h3>测试2：代码生成（从0到1）</h3>
+        <p><strong>输入需求</strong></p>
+        <p><em>写一个番茄钟 Web 应用（HTML/CSS/JS）</em></p>
+        <p><strong>输出表现</strong></p>
+        <ul>
+            <li>一次性生成完整前端代码（约150行）</li>
+            <li>包含：倒计时、任务管理、图表统计</li>
+        </ul>
+        <p><strong>关键亮点</strong></p>
+        <p><strong>直接可运行！</strong></p>
+        <p>一句话总结：<em>从需求到成品，只用了几十秒。</em></p>
+        
+        <h3>测试3：Agent能力（工程级任务）</h3>
+        <p><strong>任务描述</strong></p>
+        <p>生成一个 Python 脚本：</p>
+        <ul>
+            <li>扫描 Downloads 文件夹</li>
+            <li>找出最近7天截图</li>
+            <li>自动重命名</li>
+        </ul>
+        <p><strong>V4 的表现</strong></p>
+        <p><strong>第一阶段：主动输出风险评估</strong></p>
+        <p>例如：文件重名、权限问题、空目录情况</p>
+        <p><strong>第二阶段：再生成代码</strong></p>
+        <ul>
+            <li>支持 --dry-run</li>
+            <li>结构清晰</li>
+            <li>可直接运行</li>
+        </ul>
+        <p><strong>核心价值</strong></p>
+        <p>它不是"写代码"，而是：<strong>像工程师一样思考代码</strong></p>
+        
+        <h3>测试4：图片识别 + 推理能力</h3>
+        <p><strong>任务</strong></p>
+        <ul>
+            <li>解析复杂图表</li>
+            <li>输出 Markdown 文档</li>
+            <li>转换为 Mermaid 流程图</li>
+        </ul>
+        <p><strong>表现</strong></p>
+        <ul>
+            <li>能理解结构关系</li>
+            <li>输出清晰结构化内容</li>
+            <li>还能给优化建议</li>
+        </ul>
+        <p>不足：美术类（SVG精美程度）一般</p>
+        
+        <h2>三、对比：DeepSeek-V4 vs 其他模型</h2>
+        <table>
+            <thead>
+                <tr><th>能力</th><th>DeepSeek-V4</th><th>一些小模型</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>长文本</td><td>百万级</td><td>易崩</td></tr>
+                <tr><td>代码生成</td><td>工程级</td><td>Demo级</td></tr>
+                <tr><td>Agent能力</td><td>强</td><td>弱</td></tr>
+                <tr><td>开源</td><td>完全开源</td><td>多为闭源</td></tr>
+            </tbody>
+        </table>
+        <p>尤其是在长文本和工程能力上，差距非常明显。</p>
+        
+        <h2>四、适合谁用？</h2>
+        <ul>
+            <li><strong>开发者</strong> - 做 AI 应用、写代码、自动化任务</li>
+            <li><strong>研究人员</strong> - 模型微调、Agent研究</li>
+            <li><strong>企业</strong> - 私有化部署、降低 API 成本</li>
+        </ul>
+        
+        <h2>五、如何获取？</h2>
+        <p>官方模型已发布在 Hugging Face：</p>
+        <ul>
+            <li>DeepSeek-V4-Pro（最强版本）</li>
+            <li>完整模型集合</li>
+        </ul>
+        <p>链接直达：<a href="https://huggingface.co/collections/deepseek-ai/deepseek-v4">https://huggingface.co/collections/deepseek-ai/deepseek-v4</a></p>
+        
+        <h2>六、总结</h2>
+        <p>DeepSeek-V4 这一代的关键词只有三个：</p>
+        <p><strong>更长（百万上下文）</strong><br>
+        <strong>更强（Agent能力）</strong><br>
+        <strong>更开放（完全开源）</strong></p>
+        <p>如果说上一代只是"强模型"，那这一代已经是：</p>
+        <p><em><strong>真正能干活的 AI 工程助手</strong></em></p>
+        
+        <h2>最后一句话</h2>
+        <p>如果你还在观望开源模型：</p>
+        <p><strong>DeepSeek-V4，很可能就是当前最值得上手的一款。</strong></p>`,
+        tags: ["AI", "DEEPSEEK", "大模型", "开源"],
+        date: "2026-04-24",
+        readingTime: "10 分钟"
     }
 ];
 
